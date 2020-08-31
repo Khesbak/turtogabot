@@ -1,0 +1,28 @@
+<package format="2">
+  <name>tortugabot_bringup</name>
+  <version>0.0.0</version>
+  <description>Launch files for starting the tortugabot </description>
+  <author>Alexis Maldonado</author>
+  <maintainer email="amaldo@cs.uni-bremen.de">Alexis Maldonado</maintainer>
+  <license>GPLv3+</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- 3dsensor.launch -->
+  <depend>openni2_launch</depend>
+  <depend>nodelet</depend>
+
+  <!-- ekf.launch -->
+  <depend>robot_pose_ekf</depend>
+
+  <!-- joy_teleop.launch -->
+  <depend>joy</depend>
+
+  <!-- {joy,keyboard}_teleop.launch -->
+  <depend>turtlebot_teleop</depend>
+
+  <!-- minimal.launch -->
+  <depend>tf</depend>
+</package>
+
+
